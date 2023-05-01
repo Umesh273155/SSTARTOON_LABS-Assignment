@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+         <div class="container">
+        <h1 style="color:#003F73" class="main-heading">Enter Values</h1>
+
+         <!--input field box start -->
+        <div class="form-group">
+          <input type="number" id="input-value" class="form-control" placeholder="Input Value">
+          <input type="number" id="max-value" class="form-control" placeholder="Max Value">
+        </div>
+         <!--input field box end -->
+
+         <!--  button field start -->
+        <button type="button" class="btn btn-primary" onclick="plotGraph()">Plot Graph</button>
+          <!-- for button field   end -->
+
+          <!--  graph  layout start -->
+        <h2 class="graph-Text">Graph</h2>
+        <div class="graph-container">
+
+           <!--  vertical bar-graph start -->
+            <div class="graph-level-percentage" style="display:block">
+          <div class="vertical-bar-graph">
+            <div class="graph-bar" ></div>  
+          </div>
+           
+          <div class="level&percentage">
+            <h3 id="percentage1"style="color:#007bff">0%</h3>
+            <h3 style="color:#003F73">Level1</h3>
+        </div>
+        </div>
+           <!-- Vertical bar-graph end -->
+           <!--  pie chart  graph start -->
+           <div class="graph-level-percentage" style="display:block">
+          <div class="pie-chart">
+           
+            <div class="pie-slice"></div>
+            <div class="pie-slice"></div>
+           
+          </div>
+          
+          <div class="level&percentage">
+            <h3 id="percentage2"style="color:#007bff">0%</h3>
+            <h3 style="color:#003F73">Level2</h3>
+           </div>
+           </div>
+           <!-- pie- chart  graph end -->
+           <!--  gradient  graph start -->
+           <div class="graph-level-percentage" style="display:block">
+          <div class="gradient-graph">
+            <div class="graph-bar" id="bar-graph"></div>
+          </div>
+         
+          <div class="level&percentage">
+            <h3 id="percentage3" style="color:#007bff">0%</h3>
+            <h3 style="color:#003F73">Level3</h3>
+
+           </div>
+           <!-- gradient  graph end -->
+        </div>
+
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+.container {
+max-width: 700px;
+height:550px;
+
+border:1px solid grey;
+box-shadow: 0 0 15px -2px #444444;
+
+margin: 0 auto;
+text-align: center;
+
+}
+.main-heading{
+text-align: start;
+margin-left:150px;
+}
+.graph-Text{
+text-align: start;
+margin-left:150px;
+color:#003F73;
+}
+.form-control{
+height:30px;
+width:250px;
+outline: none;
+margin-right:20px;
+background-color: #C2E3FF;
+border:0;
+}
+.btn {
+background-color:#003F73;
+color:#FFFFFF;
+width:80px;
+height:30px;
+
+}
+
+.form-group {
+margin-bottom: 1rem;
+
+}
+
+.graph-container {
+display: flex;
+justify-content: center;
+margin-top: 2rem;
+}
+
+.vertical-bar-graph {
+width: 60px;
+height: 200px;
+/* border: 1px solid #333; */
+margin-right: 2rem;
+margin-left:20px;
+position: relative;
+outline:none;
+background-color: #C2E3FF;
+
+}
+
+.graph-bar {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: #008CFF;
+transition: height 0.5s ease-out;
+}
+
+.pie-chart {
+width: 200px;
+height: 200px;
+position: relative;
+background-color: #C2E3FF;
+/* background-color: #008CFF; */
+margin-right: 2rem;
+border-radius: 50%;
+border:1px solid gainsboro;
+
+}
+
+.pie-slice {
+position: absolute;
+width: 100%;
+height: 100%;
+clip: rect(0, 100px, 100px, 0); 
+transform: rotate(0deg);
+transform-origin: 50% 50%;
+border-radius: 50%;
+transition: transform 0.5s ease-out;
+}
+
+.pie-slice:first-child {
+background-color: #007bff;
+}
+
+.gradient-graph {
+width: 60px;
+height: 200px;
+background-image: linear-gradient(to top, #007bff, #e8f0fc);
+margin-right: 2rem;
+position: relative;
+}
+
+.gradient-graph .graph-bar {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+transition: height 0.5s ease-out;
+}
